@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
 @import "tailwindcss";
 
-
 h1 {
     font-family: "Bowlby One SC", sans-serif;
     font-weight: 400;
@@ -9,5 +8,5 @@ h1 {
 }
 
 @theme {
-    --color-primary: #ff6b04;
+    --color-primary: #df2020;
 }
