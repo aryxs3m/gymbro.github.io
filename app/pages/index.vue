@@ -36,11 +36,11 @@
   <FeatureShowcase></FeatureShowcase>
 
   <CtaSection>
-    <h1 class="text-8xl text-shadow-lg/30">Are you ready to make your workouts smarter?</h1>
+    <h1 class="text-5xl md:text-8xl text-shadow-lg/30">Are you ready to make your workouts smarter?</h1>
     <p class="text-2xl">Register in our free app, see our demo or host your instance on your very own server.</p>
     <div class="mt-3">
-      <RfButton href="https://cloud.repflux.app" class="me-3">Register</RfButton>
-      <RfButton href="https://demo.repflux.app" class="me-3">See Demo</RfButton>
+      <RfButton href="https://cloud.repflux.app" class="me-3 mb-3">Register</RfButton>
+      <RfButton href="https://demo.repflux.app" class="me-3 mb-3">See Demo</RfButton>
       <RfButton href="https://docs.repflux.app">Self host</RfButton>
     </div>
   </CtaSection>

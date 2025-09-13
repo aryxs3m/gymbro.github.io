@@ -44,12 +44,13 @@ let items = [
           <NavLink v-for="item in items" :to="item.href" class="mx-3 inline-block">{{ item.label }}</NavLink>
         </ul>
       </div>
-      <div class="my-auto">
+      <div class="my-auto hidden md:block">
         <RfButton href="https://cloud.repflux.app">Open App</RfButton>
       </div>
     </div>
     <div>
-      <div class="container" :class="{hidden: !isMobileOpen}">
+      <div class="container text-center" :class="{hidden: !isMobileOpen}">
+        <RfButton href="https://cloud.repflux.app" class="mb-5">Open App</RfButton>
         <ul>
           <NavLink v-for="item in items" :to="item.href" class="p-4 block">{{ item.label }}</NavLink>
         </ul>
