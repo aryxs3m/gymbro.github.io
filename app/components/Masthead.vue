@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="bg-[url(/masthead.jpg)] bg-cover bg-center h-full md:h-screen md:overflow-hidden">
+  <div class="bg-[url(/masthead.webp)] bg-cover bg-fixed bg-center h-full md:h-screen md:overflow-hidden">
     <!-- Main CTA -->
     <div class="bg-black/70 h-full">
       <div class="p-10 md:p-20 lg:p-30 flex">

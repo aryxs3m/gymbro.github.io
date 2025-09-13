@@ -3,8 +3,8 @@
 </script>
 
 <template>
-  <div class="bg-[url(/masthead.jpg)] bg-fixed">
-    <div class="bg-black/50 backdrop-blur-sm text-white py-35">
+  <div class="bg-[url(/cta.webp)] bg-fixed bg-center">
+    <div class="bg-black/50 text-white py-35 backdrop-blur-sm">
       <div class="container mx-auto text-center md:text-left">
         <slot></slot>
       </div>
