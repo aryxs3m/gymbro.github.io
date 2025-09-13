@@ -5,7 +5,7 @@
 <template>
   <div class="bg-[url(/cta.webp)] bg-fixed bg-center">
     <div class="bg-black/50 text-white py-35 backdrop-blur-sm">
-      <div class="container mx-auto text-center md:text-left">
+      <div class="container mx-auto text-center md:text-left px-5">
         <slot></slot>
       </div>
     </div>
