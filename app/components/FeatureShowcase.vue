@@ -46,7 +46,7 @@
         </div>
       </div>
     </div>
-    <div class="grow m-auto bg-[url(/masthead.jpg)] bg-cover w-full h-full text-white">
+    <div class="grow m-auto bg-[url(/cta.webp)] bg-cover w-full h-full text-white">
       <div class="bg-black/50 w-full h-full flex backdrop-blur-xs" v-if="currentFeature">
         <div class="m-auto text-center">
           <img :src="currentFeature.image" :alt="currentFeature.title" class="h-100 inline-block">
