@@ -1,6 +1,8 @@
 <script setup lang="ts">
 defineProps(['absolute'])
 
+let isMobileOpen = ref(false);
+
 let items = [
   {
     label: "About",
@@ -33,24 +35,20 @@ let items = [
         <NuxtLink to="/"><img src="/logo.png" alt="Repflux" class="w-[200px]"></NuxtLink>
       </div>
       <div class="ms-auto my-auto block md:hidden">
-        <svg id="btn-mobile-menu" class="w-[48px] h-[48px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+        <svg @click="isMobileOpen = !isMobileOpen" class="w-[48px] h-[48px] text-gray-800 dark:text-white transition-all" :class="{'rotate-90': isMobileOpen}" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
           <path stroke="currentColor" stroke-linecap="round" stroke-width="1.4" d="M5 7h14M5 12h14M5 17h14"/>
         </svg>
       </div>
       <div class="ms-auto my-auto hidden md:block">
         <ul class="inline">
-          <NavLink v-for="item in items" :to="item.href" class="mx-3">{{ item.label }}</NavLink>
+          <NavLink v-for="item in items" :to="item.href" class="mx-3 inline-block">{{ item.label }}</NavLink>
         </ul>
       </div>
     </div>
-    <div id="mobile-menu" class="hidden">
-      <div class="container">
+    <div>
+      <div class="container" :class="{hidden: !isMobileOpen}">
         <ul>
-          <li class="p-4"><a href="#">About</a></li>
-          <li class="p-4"><a href="#">Features</a></li>
-          <li class="p-4"><a href="#">Why</a></li>
-          <li class="p-4"><a href="#">Demo</a></li>
-          <li class="p-4"><a href="#">Contact</a></li>
+          <NavLink v-for="item in items" :to="item.href" class="p-4 block">{{ item.label }}</NavLink>
         </ul>
       </div>
     </div>
