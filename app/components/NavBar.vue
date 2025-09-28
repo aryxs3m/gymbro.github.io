@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const runtimeConfig = useRuntimeConfig()
 defineProps(['absolute'])
 
 let isMobileOpen = ref(false);
@@ -18,7 +19,7 @@ let items = [
   },
   {
     label: "Demo",
-    href: "https://demo.repflux.app",
+    href: runtimeConfig.public.demoUrl,
   },
   {
     label: "Contact",
@@ -45,7 +46,7 @@ let items = [
         </ul>
       </div>
       <div class="my-auto hidden md:block">
-        <RfButton href="https://cloud.repflux.app">Open App</RfButton>
+        <RfButton :href="runtimeConfig.public.cloudUrl">Open App</RfButton>
       </div>
     </div>
     <div>

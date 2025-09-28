@@ -9,8 +9,9 @@
         <img src="/logo.png" class="invert w-100 p-10 md:p-5 inline-block" alt="Repflux">
       </div>
       <div>
-        <h1 class="text-xl mb-2">Boring Stuff</h1>
+        <h1 class="text-xl mb-2">Boring but Important</h1>
         <ul class="flex flex-col gap-2">
+          <NavLink to="cloud-data-delete">Cloud Data Delete</NavLink>
           <NavLink to="privacy-policy">Privacy Policy</NavLink>
           <NavLink to="terms-of-service">Terms of Service</NavLink>
           <NavLink to="impressum">Impressum</NavLink>

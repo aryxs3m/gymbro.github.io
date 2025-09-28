@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+const runtimeConfig = useRuntimeConfig()
 </script>
 
 <template>
@@ -8,8 +8,8 @@
   <Masthead>
     <h1 class="text-5xl md:text-8xl mt-20 md:mt-25 lg:mt-50 text-shadow-lg/80">Track your sets, your weight and your body.</h1>
     <p class="text-shadow-lg/30">See your progression real time.</p>
-    <RfButton class="mt-5 me-3">Register</RfButton>
-    <RfButton>See Demo</RfButton>
+    <RfButton :href="runtimeConfig.public.cloudUrl" class="mt-5 me-3">Open App</RfButton>
+    <RfButton :href="runtimeConfig.public.demoUrl">Try Demo</RfButton>
   </Masthead>
 
   <SimpleFeatureContainer class="mt-20">
@@ -37,11 +37,11 @@
 
   <CtaSection>
     <h1 class="text-5xl md:text-8xl text-shadow-lg/30">Are you ready to make your workouts smarter?</h1>
-    <p class="text-2xl">Register in our free app, see our demo or host your instance on your very own server.</p>
+    <p class="text-2xl">Try the demo, register in the free cloud version or host your instance on your very own server.</p>
     <div class="mt-3">
-      <RfButton href="https://cloud.repflux.app" class="me-3 mb-3">Register</RfButton>
-      <RfButton href="https://demo.repflux.app" class="me-3 mb-3">See Demo</RfButton>
-      <RfButton href="https://docs.repflux.app">Self host</RfButton>
+      <RfButton :href="runtimeConfig.public.cloudUrl" class="me-3 mb-3">Open App</RfButton>
+      <RfButton :href="runtimeConfig.public.demoUrl" class="me-3 mb-3">See Demo</RfButton>
+      <RfButton :href="runtimeConfig.public.github">Self host</RfButton>
     </div>
   </CtaSection>
 

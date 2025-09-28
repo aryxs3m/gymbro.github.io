@@ -2,6 +2,16 @@
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
+  runtimeConfig: {
+    public: {
+      demoUrl: 'https://demo.repflux.app',
+      docsUrl: 'https://docs.repflux.app',
+      cloudUrl: 'https://cloud.repflux.app',
+      github: 'https://github.com/aryxs3m/repflux-app',
+      discord: 'https://discord.gg/8DNa7YGkEY',
+    },
+  },
+
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   css: ['~/assets/style.css'],
