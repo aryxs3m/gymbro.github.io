@@ -7,7 +7,9 @@ export default defineNuxtConfig({
       title: 'Repflux - open source workout tracker',
       meta: [
         { name: 'description', content: 'Keep track of your workouts, your body measurements and your weight. See your progression real time.' },
-        { name: 'ogImage', content: 'https://repflux.app/og.jpg' },
+        { name: 'og:title', content: 'Repflux - open source workout tracker' },
+        { name: 'og:image', content: 'https://repflux.app/og.jpg' },
+        { name: 'og:site_name', content: 'Repflux' },
       ],
       htmlAttrs: {
         lang: 'en',
